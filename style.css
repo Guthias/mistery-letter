@@ -54,6 +54,7 @@ html , body {
   border-right: 2px solid black;
   border-left: 2px solid black;
   height: 100%;
+  margin:20px 0;
 }
 
 main {
@@ -69,6 +70,19 @@ span {
   display: inline-block;
   cursor: pointer;
   user-select: none;
+}
+
+.contador-area {
+  display: flex;
+  flex-direction: row;
+}
+
+p {
+  margin: 0;
+}
+
+#carta-contador {
+  margin-left: 5px;
 }
 
 .newspaper {
