@@ -100,3 +100,7 @@ main {
   font-size: 40px;
   padding: 15px;
 }
+
+.rotateleft {
+  transform: rotate(-5deg);
+}
