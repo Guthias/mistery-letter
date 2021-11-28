@@ -109,10 +109,10 @@ main {
   transform: rotate(5deg);
 }
 
-.swekleft {
+.skewleft {
   transform: skew(10deg);
 }
 
-.swekright {
+.skewright {
   transform: skew(-10deg);
 }
