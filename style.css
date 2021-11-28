@@ -95,3 +95,8 @@ main {
   font-size: 30px;
   padding: 10px;
 }
+
+.reallybig {
+  font-size: 40px;
+  padding: 15px;
+}
