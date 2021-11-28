@@ -11,7 +11,7 @@ const classesGroup = {
 function randomClasses() {
   const classList = [];
   let randomClass;
-
+  // eslint-disable-next-line no-restricted-syntax
   for (const key in classesGroup) {
     if (Object.prototype.hasOwnProperty.call(classesGroup, key)) {
       randomClass = Math.floor(Math.random() * classesGroup[key].length);
@@ -21,10 +21,16 @@ function randomClasses() {
   return classList.join(' ');
 }
 
+function changeClasses(event) {
+  const element = event.target;
+  element.className = randomClasses();
+}
+
 function generateWord(word) {
   const element = document.createElement('span');
   element.innerText = word;
   element.className = randomClasses();
+  element.addEventListener('click', changeClasses);
   letter.appendChild(element);
 }
 

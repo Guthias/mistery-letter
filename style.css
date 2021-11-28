@@ -67,6 +67,8 @@ main {
 
 span {
   display: inline-block;
+  cursor: pointer;
+  user-select: none;
 }
 
 .newspaper {
