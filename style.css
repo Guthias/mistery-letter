@@ -112,3 +112,7 @@ main {
 .swekleft {
   transform: skew(10deg);
 }
+
+.swekright {
+  transform: skew(-10deg);
+}
