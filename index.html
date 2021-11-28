@@ -8,17 +8,20 @@
   <title>Mistery Letter</title>
 </head>
 <body>
-  <div class="input-area">
-    <label for="carta-texto">Conteudo da Carta</label>
-    <div class="input-box">
-      <input id="carta-texto" type="text">
-      <button id="criar-carta">Criar Carta</button>
+  <main>
+    <div class="input-area">
+      <label for="carta-texto" class="input-label">Conteudo da Carta</label>
+      <div class="input-box">
+        <input id="carta-texto" class="input-content" type="text">
+        <button id="criar-carta" class="input-button">Criar Carta</button>
+      </div>
     </div>
-  </div>
+  
+    <div class="letter-area">
+      <p id="carta-gerada"></p>
+    </div>
+  </main>
 
-  <div class="letter-area">
-    <p id="carta-gerada"></p>
-  </div>
   <script src="script.js"></script>
 </body>
 </html>
