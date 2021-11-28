@@ -12,7 +12,7 @@ const classesGroup = {
 function randomClasses() {
   const classList = [];
   let randomClass;
-  // eslint-disable-next-line no-restricted-syntax
+
   for (const key in classesGroup) {
     if (Object.prototype.hasOwnProperty.call(classesGroup, key)) {
       randomClass = Math.floor(Math.random() * classesGroup[key].length);

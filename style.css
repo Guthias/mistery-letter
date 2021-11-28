@@ -54,7 +54,7 @@ html , body {
   border-right: 2px solid black;
   border-left: 2px solid black;
   height: 100%;
-  margin:20px 0;
+  margin: 20px 0;
 }
 
 main {
@@ -87,8 +87,8 @@ p {
 
 .newspaper {
   background-color: antiquewhite;
-  font-family: 'Times New Roman', serif;
-  font-weight: bold;
+  font-family: Times New Roman, serif;
+  font-weight: 700;
 }
 
 .magazine1 {
