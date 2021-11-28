@@ -2,9 +2,29 @@ const inputText = document.getElementById('carta-texto');
 const buttonLetter = document.getElementById('criar-carta');
 const letter = document.getElementById('carta-gerada');
 
+const classesGroup = {
+  style: ['newspaper', 'magazine1', 'magazine2'],
+  size: ['medium', 'big', 'reallybig'],
+  rotate: ['rotateleft', 'rotateright'],
+  skew: ['skewleft', 'skewright'] };
+
+function randomClasses() {
+  const classList = [];
+  let randomClass;
+
+  for (const key in classesGroup) {
+    if (Object.prototype.hasOwnProperty.call(classesGroup, key)) {
+      randomClass = Math.floor(Math.random() * classesGroup[key].length);
+      classList.push(classesGroup[key][randomClass]);
+    }
+  }
+  return classList.join(' ');
+}
+
 function generateWord(word) {
   const element = document.createElement('span');
   element.innerText = word;
+  element.className = randomClasses();
   letter.appendChild(element);
 }
 
