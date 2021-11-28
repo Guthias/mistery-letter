@@ -17,7 +17,14 @@ function clearLetter() {
 function generateLetter() {
   clearLetter();
   let letterText = inputText.value;
-  letterText = letterText.split(' ');
+  const regex = / +/gm;
+  letterText = letterText.trim().replace(regex, ' ').split(' ');
+
+  console.log(letterText);
+  if (letterText[0] === '') {
+    letter.innerText = 'Por favor, digite o conteúdo da carta.';
+    return;
+  }
 
   for (let i = 0; i < letterText.length; i += 1) {
     generateWord(letterText[i]);
