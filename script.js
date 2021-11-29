@@ -13,11 +13,10 @@ function randomClasses() {
   const classList = [];
   let randomClass;
 
-  for (const key in classesGroup) {
-    if (Object.prototype.hasOwnProperty.call(classesGroup, key)) {
-      randomClass = Math.floor(Math.random() * classesGroup[key].length);
-      classList.push(classesGroup[key][randomClass]);
-    }
+  const objArray = Object.keys(classesGroup);
+  for (let i = 0; i < objArray.length; i += 1) {
+    randomClass = Math.floor(Math.random() * classesGroup[objArray[i]].length);
+    classList.push(classesGroup[objArray[i]][randomClass]);
   }
   return classList.join(' ');
 }
